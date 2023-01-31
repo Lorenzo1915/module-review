@@ -14,7 +14,11 @@
 //         }
         
         
-   
+// function clear() { //non mi entra nella funzione per ripulire i paragrafi
+//     alert("sono nel clear")
+//     document.getElementById("results").style.display = none; 
+    
+// };   
 
 // }
 let done = 0;

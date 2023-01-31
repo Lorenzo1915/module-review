@@ -24,31 +24,54 @@
     <header>
     </header>
     <main>
-        <section >
-            <article >
-                <div>
+
+        <h1 class="heading text-center display-2">
+            Convertitore di valute</h1>
+        <div class="container">
+        <section class="row" >
+            <article class="row" >
+                <div class="form-group">
+                    <label class="amount" for="oamount"><h4>inserisci quanto vuoi convertire :</h4></label>
+                    <input type="number" class="form-control searchBox mb-3 mt-3" required placeholder="" id="input" >
+                </div>
+                <div class="row">
                     
-                    <label for="number">inserisci la quantita di <select id= "select2">
-                        <option value="EUR">"EUR"</option>
-                        <option value="USD">"USD"</option>
-                        <option value="JPY">"JPY"</option>
-                        <option value="GBP">"GBP"</option>
-                        <option value="CAD">"CAD"</option>
-                        <option value="AUD">"AUD"</option>
-                        <option value="CHF">"CHF"</option>
-                    </select>  da convertire</label>
-                    <input type="number" name="valuta1" id="input">
-                    in
-                    <select id= "select1">
-                        <option id="option1" value="all">Select all</option>
-                        <option value="USD">"USD"</option>
-                        <option value="JPY">"JPY"</option>
-                        <option value="GBP">"GBP"</option>
-                        <option value="CAD">"CAD"</option>
-                        <option value="AUD">"AUD"</option>
-                        <option value="CHF">"CHF"</option>
-                    </select>
-                    <button onclick="converter()"> Clicca per eseguire </button>
+                    <div class="col-6-sm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-to">
+                                <span class="input-group-text">Da</span>
+                            </div>
+                            <select id= "select2"class="form-select" aria-label="Default select example">
+                            <option value="EUR">"EUR"</option>
+                            <option value="USD">"USD"</option>
+                            <option value="JPY">"JPY"</option>
+                            <option value="GBP">"GBP"</option>
+                            <option value="CAD">"CAD"</option>
+                            <option value="AUD">"AUD"</option>
+                            <option value="CHF">"CHF"</option>
+                        </select>
+                    </div>    
+                    </div>
+                    <div class="col-6-sm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-to">
+                                <span class="input-group-text">A</span>
+                            </div>
+                        <select id= "select1" class="form-select" aria-label="Default select example">
+                            <option id="option1" value="all">Select all</option>
+                            <option value="USD">"USD"</option>
+                            <option value="JPY">"JPY"</option>
+                            <option value="GBP">"GBP"</option>
+                            <option value="CAD">"CAD"</option>
+                            <option value="AUD">"AUD"</option>
+                            <option value="CHF">"CHF"</option>
+                        
+                        </select>
+                        </div>
+                        <button onclick="converter()" type="button" class="btn btn-outline-primary"> Clicca per eseguire </button>
+                        <button onclick="clear()" type="button" class="btn btn-outline-secondary"> Clear </button>
+                    </div>
+
                     
                 </div>
             </article>
@@ -56,6 +79,7 @@
                 
             </article>
         </section>
+        </div>
     </main>
     <footer>
     </footer>

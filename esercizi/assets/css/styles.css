@@ -1,0 +1,21 @@
+
+
+.container{
+background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba(126, 118, 6, 0.37);
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 17px );
+border-radius: 50px;
+}
+
+select{
+    width: 10rem !important;
+}
+section * {
+    margin: 5px;
+}
+input{
+
+    width: 10rem !important;
+    margin-top: 2 rem!important;
+}
