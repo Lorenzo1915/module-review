@@ -1,5 +1,22 @@
 'useStrict'
+// window.onload = () => {  //non funziona perchè riesco a stampare automaticamente solo il mio ultimo valore dell'array(ho fatto più prove)
+//     arrayValute = ["USD","JPY","GBP","CAD","AUD","CHF"]
+//     let html=""
+//     let i 
+//     let option = document.createElement('option')
+//     let select = document.getElementById('select1')
+//         for(i=0  ; i < 6; i++){
+//             html +="<option value='" + arrayValute[i] +"'>" + arrayValute[i] +"</option>" 
+//             console.log(html)
+//             select.innerHTML= html
+//             html=""
+            
+//         }
+        
+        
+   
 
+// }
 let done = 0;
 function converter() {
     
