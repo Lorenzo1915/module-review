@@ -27,9 +27,18 @@
         <section >
             <article >
                 <div>
-                    <label for="number">inserisci il numero di EURO da convertire</label>
+                    
+                    <label for="number">inserisci la quantita di <select id= "select2">
+                        <option value="EUR">"EUR"</option>
+                        <option value="USD">"USD"</option>
+                        <option value="JPY">"JPY"</option>
+                        <option value="GBP">"GBP"</option>
+                        <option value="CAD">"CAD"</option>
+                        <option value="AUD">"AUD"</option>
+                        <option value="CHF">"CHF"</option>
+                    </select>  da convertire</label>
                     <input type="number" name="valuta1" id="input">
-                    <button onclick="converter()"> Clicca per eseguire </button>
+                    in
                     <select id= "select1">
                         <option id="option1" value="all">Select all</option>
                         <option value="USD">"USD"</option>
@@ -39,6 +48,8 @@
                         <option value="AUD">"AUD"</option>
                         <option value="CHF">"CHF"</option>
                     </select>
+                    <button onclick="converter()"> Clicca per eseguire </button>
+                    
                 </div>
             </article>
             <article id="results">
