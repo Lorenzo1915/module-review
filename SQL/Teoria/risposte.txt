@@ -1,1 +1,7 @@
-qui andranno le risposte
+1 C
+2 B
+3 B
+4 A
+5 B
+6 B
+7 D
