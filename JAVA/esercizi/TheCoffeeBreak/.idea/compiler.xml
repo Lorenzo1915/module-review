@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TheCoffeeBreak" />
+        <module name="Esempio_JDBC" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TheCoffeeBreak" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
