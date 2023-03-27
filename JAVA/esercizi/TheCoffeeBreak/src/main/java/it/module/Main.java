@@ -168,12 +168,13 @@ public class Main {
         List<Coffee> coffees = coffesDAO.getAll();
         System.out.println("------------------");
         System.out.println("vendite 100 pezzi o superiore");
+        long ricavo = 0;
 
         for (Coffee coffee : coffees) {
 
             List<Sell> sells = sellsDAO.getAllOver100(coffee.getId());
 
-            long ricavo = 0;
+
 
 
             if (!sells.isEmpty()) {
@@ -186,8 +187,9 @@ public class Main {
             } else {
                 System.out.println("\t [Nessun vendita disponibile con quantita maggiore a 100]");
             }
-            System.out.println("Ricavo totale: " + ricavo +" Euro");
+
 
         }
+        System.out.println("Ricavo totale: " + ricavo +" Euro");
     }
 }
